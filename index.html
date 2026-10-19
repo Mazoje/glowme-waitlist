@@ -252,8 +252,8 @@
 
             try {
                 // Replace with your live backend deployment URL once hosted (e.g., https://your-backend.onrender.com/api/waitlist)
-                const response = await fetch('http://localhost:3000/api/waitlist', {
-                    method: 'POST',
+              const response = await fetch('https://glowme-waitlist-production.up.railway.app/api/waitlist', {
+                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
