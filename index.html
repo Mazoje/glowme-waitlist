@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOWme — Own Your Glow | Melanin-Rich Skin Intelligence</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fbf8f5',
+                            100: '#f4ede6',
+                            600: '#8c5b3e',
+                            750: '#4a2f20',
+                            800: '#382216',
+                            900: '#26170e'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-50 text-brand-900 font-sans antialiased selection:bg-brand-600 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-50/85 backdrop-blur-md border-b border-brand-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="logo.png" alt="logo" class="h-10 w-auto object-contain">
+            </div>
+            <a href="#waitlist" class="bg-brand-800 text-brand-50 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-750 transition shadow-sm">
+                Join Waitlist
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Melanin-Rich Background Imagery -->
+    <section class="relative pt-36 pb-28 md:pt-48 md:pb-36 px-6 overflow-hidden bg-brand-900">
+        <!-- Background Image with Warm Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=2000" 
+                 alt="Radiant melanin-rich skin background" 
+                 class="w-full h-full object-cover object-center opacity-35 scale-105 transform">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-900/80 via-brand-900/60 to-brand-50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center space-x-2 bg-brand-100/90 backdrop-blur-sm text-brand-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 shadow-sm">
+                <span>✨ Own Your Glow</span>
+                <span class="w-1 h-1 bg-brand-600 rounded-full"></span>
+                <span>Waitlist Beta</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6 drop-shadow-sm">
+                Skincare built for skin like yours.
+            </h1>
+            <p class="text-lg md:text-xl text-brand-100/90 max-w-2xl mx-auto leading-relaxed mb-10 drop-shadow">
+                Most skincare AI was trained on lighter skin, missing how your skin actually behaves. GLOWme is a skin intelligence app built from the foundation for deeper, melanin-rich skin tones (Fitzpatrick Types IV to VI).
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#waitlist" class="w-full sm:w-auto bg-brand-800 text-brand-50 px-8 py-4 rounded-full text-base font-semibold hover:bg-brand-700 transition shadow-xl text-center border border-brand-600/30">
+                    Secure Your Spot
+                </a>
+                <a href="#features" class="w-full sm:w-auto text-brand-800 bg-white/90 hover:bg-white px-8 py-4 rounded-full text-base font-medium transition text-center shadow-md">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why GLOWme Exists / Value Pillars -->
+    <section id="features" class="py-20 bg-white border-y border-brand-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-brand-800 mb-4">Designed from the foundation up</h2>
+                <p class="text-brand-750/70">Your skin tone carries more melanin than most skincare tools account for. GLOWme closes that gap.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-50 p-8 rounded-2xl border border-brand-100">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-brand-800 text-xl font-bold mb-6">🎯</div>
+                    <h3 class="text-xl font-semibold text-brand-800 mb-3">Melanin-First AI</h3>
+                    <p class="text-brand-750/70 text-sm leading-relaxed">
+                        Accurately reads how inflammation, dark marks, and scarring show up on deeper skin tones (types IV to VI) without misreading your skin.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brand-50 p-8 rounded-2xl border border-brand-100">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-brand-800 text-xl font-bold mb-6">🌦️</div>
+                    <h3 class="text-xl font-semibold text-brand-800 mb-3">Real Nigerian Context</h3>
+                    <p class="text-brand-750/70 text-sm leading-relaxed">
+                        Routines and care steps engineered specifically for local realities—navigating severe Harmattan dryness and humid months alike.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-brand-50 p-8 rounded-2xl border border-brand-100">
+                    <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-brand-800 text-xl font-bold mb-6">🥗</div>
+                    <h3 class="text-xl font-semibold text-brand-800 mb-3">Nourished Locally</h3>
+                    <p class="text-brand-750/70 text-sm leading-relaxed">
+                        Nutrition guidance validated by experts and built around familiar, accessible Nigerian foods that support healthy skin from within.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Capabilities -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-xs font-semibold tracking-wider text-brand-600 uppercase">What's Inside</span>
+                <h2 class="text-3xl font-bold text-brand-800 mt-2 mb-6">Everything you need to understand and nurture your skin.</h2>
+                <ul class="space-y-4 text-brand-750/80">
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-600 font-bold">✓</span>
+                        <span><strong>AI Skin Scans:</strong> Take a photo assessment built explicitly for melanin-rich skin.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-600 font-bold">✓</span>
+                        <span><strong>Personal Routines:</strong> Morning and evening guidance tailored to your climate and skin goals.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-600 font-bold">✓</span>
+                        <span><strong>Local Marketplace:</strong> One-tap reorders for routine products from trusted local pharmacies.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-600 font-bold">✓</span>
+                        <span><strong>Dermatologist Access:</strong> Direct referral paths to verified Nigerian dermatologists when clinical care is needed.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-brand-800 text-brand-50 p-8 rounded-3xl shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-600/30 rounded-full blur-2xl"></div>
+                <p class="text-xs uppercase tracking-widest text-brand-100/60 mb-2 font-semibold">Clinical Oversight</p>
+                <h3 class="text-2xl font-bold mb-4">Backed by Science & Expertise</h3>
+                <p class="text-brand-100/80 text-sm leading-relaxed mb-6">
+                    Our Clinical Director, <strong>Dr. Faiza Sadauki</strong>, is a practising Nigerian dermatologist specialising in deeper skin tones. She writes our clinical training rules and ensures every recommendation is sound.
+                </p>
+                <div class="border-t border-brand-750 pt-4 flex items-center justify-between text-xs text-brand-100/60">
+                    <span>Kano, Nigeria</span>
+                    <span>NDPA 2023 Compliant   </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section & Form -->
+    <section id="waitlist" class="py-20 bg-white border-t border-brand-100 px-6">
+        <div class="max-w-xl mx-auto bg-brand-50 p-8 md:p-12 rounded-3xl border border-brand-100 shadow-sm">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-brand-800 mb-2">Join the Waitlist</h2>
+                <p class="text-brand-750/70 text-sm">Be the first to experience skin intelligence designed specifically for melanin-rich skin.</p>
+            </div>
+
+            <!-- Waitlist Form -->
+            <form id="waitlistForm" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-semibold text-brand-800 uppercase tracking-wider mb-2">Full Name *</label>
+                    <input type="text" id="fullName" required placeholder="Enter your full name" 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-100 bg-white focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-brand-800 uppercase tracking-wider mb-2">Email Address *</label>
+                    <input type="email" id="email" required placeholder="name@example.com" 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-100 bg-white focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-brand-800 uppercase tracking-wider mb-2">Phone Number / WhatsApp (Optional)</label>
+                    <input type="tel" id="phone" placeholder="+234 ..." 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-100 bg-white focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-brand-800 uppercase tracking-wider mb-2">City</label>
+                    <input type="text" id="city" value="Kano" 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-100 bg-white focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-brand-800 uppercase tracking-wider mb-2">Main Skin Interest (Optional)</label>
+                    <select id="skinInterest" class="w-full px-4 py-3 rounded-xl border border-brand-100 bg-white focus:outline-none focus:ring-2 focus:ring-brand-600 text-sm">
+                        <option value="">Select your main goal or concern</option>
+                        <option value="dark_marks">Managing dark marks & uneven tone</option>
+                        <option value="dryness">Harmattan dryness & seasonal hydration</option>
+                        <option value="acne">Acne care & recovery</option>
+                        <option value="glow">General glow & routine guidance</option>
+                    </select>
+                </div>
+
+                <!-- NDPA 2023 Consent Checkbox -->
+                <div class="flex items-start space-x-3 pt-2">
+                    <input type="checkbox" id="consent" required class="mt-1 h-4 w-4 rounded border-brand-100 text-brand-600 focus:ring-brand-600">
+                    <label for="consent" class="text-xs text-brand-750/70 leading-relaxed">
+                        I agree to receive updates about GLOWme's launch. Your data is kept secure under NDPA guidelines and never shared.
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-brand-800 text-brand-50 py-4 rounded-xl font-semibold hover:bg-brand-750 transition shadow-md text-sm">
+                    Secure My Spot on the Waitlist
+                </button>
+            </form>
+
+            <!-- Success State Message (Hidden by default) -->
+            <div id="successMessage" class="hidden text-center py-10 space-y-4">
+                <div class="w-16 h-16 bg-green-100 text-green-700 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
+                <h3 class="text-2xl font-bold text-brand-800">You're on the list!</h3>
+                <p class="text-brand-750/70 text-sm leading-relaxed max-w-sm mx-auto">
+                    Thank you for joining. We are excited to welcome you to our upcoming launch. We will be in touch soon with your early access updates.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-brand-100 text-center text-xs text-brand-750/60 px-6">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="font-semibold text-brand-800 text-sm">GLOWme Technologies Ltd · Kano, Nigeria</p>
+            <p class="max-w-xl mx-auto leading-relaxed">
+                GLOWme celebrates natural pigmentation. GLOWme provides skin intelligence guidance and dermatologist referrals, not medical diagnoses.
+            </p>
+            <p>&copy; 2026 GLOWme Technologies Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Handler with Backend Integration -->
+    <script>
+        const form = document.getElementById('waitlistForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                city: document.getElementById('city').value,
+                skinInterest: document.getElementById('skinInterest').value,
+                timestamp: new Date().toISOString()
+            };
+
+            try {
+                // Replace with your live backend deployment URL once hosted (e.g., https://your-backend.onrender.com/api/waitlist)
+                const response = await fetch('http://localhost:3000/api/waitlist', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    form.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                } else {
+                    alert(data.error || 'Something went wrong. Please try again.');
+                }
+            } catch (error) {
+                console.error('Network Error:', error);
+                // Fallback simulation for local UI testing if server isn't running yet
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
