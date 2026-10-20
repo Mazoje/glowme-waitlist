@@ -61,11 +61,13 @@ app.post('/api/waitlist', async (req, res) => {
                     
                     <p>Hi ${firstName},</p>
                     
-                    <p>Thank you for joining the waitlist. You are officially in line for our upcoming release.</p>
+                    <p>Welcome to GLOWme. You're officially on our waitlist, and we're so glad you're here.</p>
                     
-                    <p>Most skincare AI was built for lighter skin tones, missing how inflammation, dark marks, and scarring actually behave on melanin-rich skin. GLOWme is changing that from the foundation up.</p>
+                    <p>We believe healthy, glowing skin should feel simple. No guessing, no trial and error, just care that understands your skin and fits your everyday life.</p>
                     
-                    <p>We will keep you updated as we get closer to rollout. In the meantime, get ready to <strong>Own Your Glow</strong>.</p>
+                    p>That's what we're building: A place where you can learn what your skin needs, follow a routine that suits you, and feel confident in your own glow. It's made with every skintone in mind, including yours.</p>
+    
+                    <p>We will keep you posted as we get closer to launch, with early updates and skin care tips. In the meantime, get ready to <strong>Own Your Glow</strong>.</p>
                     
                     <br>
                     <p>Warmly,<br>
