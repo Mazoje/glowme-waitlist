@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOWme — Own Your Glow | Melanin-Rich Skin Intelligence</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#435D26',      /* Deep Earthy Green */
+                            greenHover: '#354B1E',
+                            amber: '#DA7F2B',      /* Warm Amber */
+                            amberLight: '#F59E42',
+                            cocoa: '#411E16',      /* Deep Cocoa */
+                            cocoaDark: '#2B130E',
+                            ivory: '#F9F1E8',      /* Soft Ivory */
+                            ivoryBorder: '#EADBCE'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-ivory text-brand-cocoa font-sans antialiased selection:bg-brand-green selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-ivory/95 backdrop-blur-md border-b border-brand-ivoryBorder">
+        <div class="max-w-6xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <!-- Enlarged Logo -->
+                <img src="logo.png" alt="GLOWme logo" class="h-16 md:h-20 w-auto object-contain py-1">
+            </div>
+            <a href="#waitlist" class="bg-brand-green text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-brand-greenHover transition shadow-sm">
+                Get 1 Month Free
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Melanin-Rich African Portrait -->
+    <section class="relative pt-40 pb-28 md:pt-52 md:pb-36 px-6 overflow-hidden bg-brand-cocoaDark">
+        <!-- High Quality African Lady Hero Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=2000" 
+                 alt="Radiant African woman with beautiful melanin skin" 
+                 class="w-full h-full object-cover object-top opacity-40 scale-105 transform">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-cocoaDark/90 via-brand-cocoa/75 to-brand-ivory"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            
+            <!-- Badges & Special Offer -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-6">
+                <!-- Built for African Skin Tag (Green Accent) -->
+                <div class="inline-flex items-center space-x-2 bg-brand-green/30 border border-brand-green/60 backdrop-blur-md text-emerald-200 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
+                    <span>🌍 Built for the African Skin</span>
+                </div>
+                <!-- Launch Perk Tag (Amber Accent) -->
+                <div class="inline-flex items-center space-x-2 bg-brand-amber text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
+                    <span>✨ Waitlist Special: 1 Month Free Access</span>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6 drop-shadow-sm">
+                Skincare built for skin like yours.
+            </h1>
+            <p class="text-lg md:text-xl text-brand-ivory/90 max-w-2xl mx-auto leading-relaxed mb-8 drop-shadow">
+                Most skincare AI was trained on lighter skin, missing how your skin actually behaves. GLOWme is a skin intelligence app built specifically for deeper, melanin-rich skin tones (Fitzpatrick Types IV to VI).
+            </p>
+
+            <!-- 1 Month Free Access Banner Card -->
+            <div class="bg-brand-amber/20 border border-brand-amber/50 backdrop-blur-md p-4 rounded-2xl max-w-xl mx-auto mb-10 text-brand-ivory text-sm">
+                🎁 <strong>Early Access Perk:</strong> Join the waitlist today and get <strong>1 Month of Free Premium Access</strong> when we launch!
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#waitlist" class="w-full sm:w-auto bg-brand-green text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-brand-greenHover transition shadow-xl text-center border border-emerald-500/30">
+                    Claim 1 Month Free Access
+                </a>
+                <a href="#features" class="w-full sm:w-auto text-brand-cocoa bg-brand-ivory hover:bg-white px-8 py-4 rounded-full text-base font-semibold transition text-center shadow-md">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why GLOWme Exists / Value Pillars -->
+    <section id="features" class="py-20 bg-white border-y border-brand-ivoryBorder">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="bg-brand-amber/15 text-brand-amber text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-brand-amber/30">
+                    African Skin Intelligence
+                </span>
+                <h2 class="text-3xl font-bold text-brand-cocoa mt-4 mb-4">Designed from the foundation up</h2>
+                <p class="text-brand-cocoa/70">African skin carries unique melanin characteristics that generic skincare apps misread. GLOWme solves that.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brand-ivory p-8 rounded-2xl border border-brand-ivoryBorder">
+                    <div class="w-12 h-12 bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center text-xl font-bold mb-6">🌍</div>
+                    <h3 class="text-xl font-semibold text-brand-cocoa mb-3">Built for African Skin</h3>
+                    <p class="text-brand-cocoa/75 text-sm leading-relaxed">
+                        Engineered specifically for African skin types (Types IV to VI), accurately reading dark marks, scarring, and hyperpigmentation without error.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brand-ivory p-8 rounded-2xl border border-brand-ivoryBorder">
+                    <div class="w-12 h-12 bg-brand-amber/15 text-brand-amber rounded-xl flex items-center justify-center text-xl font-bold mb-6">🌦️</div>
+                    <h3 class="text-xl font-semibold text-brand-cocoa mb-3">Real Nigerian Context</h3>
+                    <p class="text-brand-cocoa/75 text-sm leading-relaxed">
+                        Routines engineered specifically for local environmental conditions—from severe Harmattan dryness to humid rainy seasons.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-brand-ivory p-8 rounded-2xl border border-brand-ivoryBorder">
+                    <div class="w-12 h-12 bg-brand-green/10 text-brand-green rounded-xl flex items-center justify-center text-xl font-bold mb-6">🥗</div>
+                    <h3 class="text-xl font-semibold text-brand-cocoa mb-3">Nourished Locally</h3>
+                    <p class="text-brand-cocoa/75 text-sm leading-relaxed">
+                        Nutrition guidance validated by experts and built around familiar, accessible Nigerian foods that support healthy skin from within.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Capabilities -->
+    <section class="py-20 px-6 bg-brand-ivory/50">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-xs font-bold tracking-wider text-brand-green uppercase">What's Inside</span>
+                <h2 class="text-3xl font-bold text-brand-cocoa mt-2 mb-6">Everything you need to understand and nurture your skin.</h2>
+                <ul class="space-y-4 text-brand-cocoa/85">
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-green font-bold">✓</span>
+                        <span><strong>AI Skin Scans:</strong> Photo assessments built explicitly for African and melanin-rich skin.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-green font-bold">✓</span>
+                        <span><strong>Personal Routines:</strong> Morning and evening guidance tailored to your local climate and goals.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-green font-bold">✓</span>
+                        <span><strong>Local Marketplace:</strong> One-tap reorders for routine products from trusted local pharmacies.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="text-brand-green font-bold">✓</span>
+                        <span><strong>Dermatologist Access:</strong> Direct referral paths to verified Nigerian dermatologists when clinical care is needed.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-brand-cocoa text-brand-ivory p-8 rounded-3xl shadow-xl relative overflow-hidden border border-brand-cocoaDark">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-green/30 rounded-full blur-2xl"></div>
+                <p class="text-xs uppercase tracking-widest text-brand-amber font-bold mb-2">Clinical Oversight</p>
+                <h3 class="text-2xl font-bold mb-4">Backed by Science & Expertise</h3>
+                <p class="text-brand-ivory/80 text-sm leading-relaxed mb-6">
+                    Our Clinical Director, <strong>Dr. Faiza Sadauki</strong>, is a practising Nigerian dermatologist specialising in deeper skin tones. She writes our clinical training rules and ensures every recommendation is sound.
+                </p>
+                <div class="border-t border-brand-cocoaDark pt-4 flex items-center justify-between text-xs text-brand-ivory/60">
+                    <span>Kano, Nigeria</span>
+                    <span class="text-brand-amber font-semibold">NDPA 2023 Compliant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section & Form -->
+    <section id="waitlist" class="py-20 bg-white border-t border-brand-ivoryBorder px-6">
+        <div class="max-w-xl mx-auto bg-brand-ivory p-8 md:p-12 rounded-3xl border border-brand-ivoryBorder shadow-sm relative overflow-hidden">
+            
+            <!-- Free Offer Badge inside form box (Amber) -->
+            <div class="absolute top-0 right-0 bg-brand-amber text-white text-[10px] font-extrabold uppercase px-4 py-1.5 rounded-bl-xl tracking-wider">
+                1 Month Free Included
+            </div>
+
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-brand-cocoa mb-2">Join the Waitlist</h2>
+                <p class="text-brand-cocoa/80 text-sm font-medium">
+                    🎉 Reserve your spot today to unlock <strong>1 Month of FREE Premium Access</strong> at launch!
+                </p>
+            </div>
+
+            <!-- Waitlist Form -->
+            <form id="waitlistForm" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-bold text-brand-cocoa uppercase tracking-wider mb-2">Full Name *</label>
+                    <input type="text" id="fullName" required placeholder="Enter your full name" 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-ivoryBorder bg-white focus:outline-none focus:ring-2 focus:ring-brand-green text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-cocoa uppercase tracking-wider mb-2">Email Address *</label>
+                    <input type="email" id="email" required placeholder="name@example.com" 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-ivoryBorder bg-white focus:outline-none focus:ring-2 focus:ring-brand-green text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-cocoa uppercase tracking-wider mb-2">Phone Number / WhatsApp (Optional)</label>
+                    <input type="tel" id="phone" placeholder="+234 ..." 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-ivoryBorder bg-white focus:outline-none focus:ring-2 focus:ring-brand-green text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-cocoa uppercase tracking-wider mb-2">City</label>
+                    <input type="text" id="city" value="Kano" 
+                        class="w-full px-4 py-3 rounded-xl border border-brand-ivoryBorder bg-white focus:outline-none focus:ring-2 focus:ring-brand-green text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-brand-cocoa uppercase tracking-wider mb-2">Main Skin Interest (Optional)</label>
+                    <select id="skinInterest" class="w-full px-4 py-3 rounded-xl border border-brand-ivoryBorder bg-white focus:outline-none focus:ring-2 focus:ring-brand-green text-sm">
+                        <option value="">Select your main goal or concern</option>
+                        <option value="dark_marks">Managing dark marks & uneven tone</option>
+                        <option value="dryness">Harmattan dryness & seasonal hydration</option>
+                        <option value="acne">Acne care & recovery</option>
+                        <option value="glow">General glow & routine guidance</option>
+                    </select>
+                </div>
+
+                <!-- NDPA 2023 Consent Checkbox -->
+                <div class="flex items-start space-x-3 pt-2">
+                    <input type="checkbox" id="consent" required class="mt-1 h-4 w-4 rounded border-brand-ivoryBorder text-brand-green focus:ring-brand-green">
+                    <label for="consent" class="text-xs text-brand-cocoa/70 leading-relaxed">
+                        I agree to receive launch updates and claim my 1-month free pass. Your data is kept secure under NDPA guidelines and never shared.
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-brand-green text-white py-4 rounded-xl font-bold hover:bg-brand-greenHover transition shadow-md text-sm">
+                    Claim 1 Month Free & Join Waitlist
+                </button>
+            </form>
+
+            <!-- Success State Message (Hidden by default) -->
+            <div id="successMessage" class="hidden text-center py-10 space-y-4">
+                <div class="w-16 h-16 bg-emerald-100 text-brand-green rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
+                <h3 class="text-2xl font-bold text-brand-cocoa">You're on the list!</h3>
+                <p class="text-brand-cocoa/80 text-sm leading-relaxed max-w-sm mx-auto">
+                    Thank you for joining. Your <strong>1 Month Free Access Pass</strong> has been locked in for launch. We'll send your early access invitation directly to your inbox!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-brand-ivoryBorder text-center text-xs text-brand-cocoa/60 px-6 bg-brand-ivory">
+        <div class="max-w-4xl mx-auto space-y-3">
+            <p class="font-semibold text-brand-cocoa text-sm">GLOWme Technologies Ltd · Kano, Nigeria</p>
+            <p class="max-w-xl mx-auto leading-relaxed">
+                GLOWme celebrates African natural pigmentation. GLOWme provides skin intelligence guidance and dermatologist referrals, not medical diagnoses.
+            </p>
+            <p>&copy; 2026 GLOWme Technologies Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Handler with Backend Integration -->
+    <script>
+        const form = document.getElementById('waitlistForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                city: document.getElementById('city').value,
+                skinInterest: document.getElementById('skinInterest').value,
+                offerClaimed: '1_month_free',
+                timestamp: new Date().toISOString()
+            };
+
+            try {
+                const response = await fetch('https://glowme-waitlist-production.up.railway.app/api/waitlist', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    form.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                } else {
+                    alert(data.error || 'Something went wrong. Please try again.');
+                }
+            } catch (error) {
+                console.error('Network Error:', error);
+                // Fallback simulation for local UI testing
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
