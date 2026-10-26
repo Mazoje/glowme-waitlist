@@ -2,9 +2,9 @@
   "name": "glowme-waitlist-backend",
   "version": "1.0.0",
   "description": "Backend for GLOWme waitlist",
-  "main": "server.js",
+  "main": "glowme-waitlist-main/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node glowme-waitlist-main/server.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.8",
