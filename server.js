@@ -8,6 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// Helper delay function to prevent hitting Resend API rate limits (2 req/sec)
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 // Initialize Supabase & Resend
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_ANON_KEY;
@@ -20,7 +23,7 @@ app.get('/', (req, res) => {
     res.send('GLOWme API is running smoothly.');
 });
 
-// Waitlist Signup Endpoint
+// Waitlist Signup Endpoint (For new signups)
 app.post('/api/waitlist', async (req, res) => {
     try {
         const { fullName, email, phone, city, skinInterest } = req.body;
@@ -55,7 +58,7 @@ app.post('/api/waitlist', async (req, res) => {
         const firstName = fullName.split(' ')[0];
         
         await resend.emails.send({
-            from: 'GLOWme <onboarding@resend.dev>', // Replace with your verified domain once added to Resend
+            from: 'GLOWme <hello@glowme.com.ng>',
             to: [email],
             subject: `Welcome to GLOWme, ${firstName} ✨ Your 1-Month Free Pass is locked in!`,
             html: `
@@ -104,7 +107,7 @@ app.post('/api/waitlist', async (req, res) => {
     }
 });
 
-// Resend Email Batch Endpoint (For existing database entries)
+// Resend Email Batch Endpoint (For broadcasting to existing waitlist entries)
 app.get('/api/resend-all', async (req, res) => {
   try {
     const { data: users, error } = await supabase
@@ -125,7 +128,7 @@ app.get('/api/resend-all', async (req, res) => {
         const firstName = user.full_name ? user.full_name.split(' ')[0] : 'there';
 
         await resend.emails.send({
-          from: 'GLOWme <hello@glowme.com.ng>', // Make sure this matches your verified domain!
+          from: 'GLOWme <hello@glowme.com.ng>',
           to: [user.email],
           subject: "You're on the list. Welcome to GLOWme",
           html: `
@@ -149,7 +152,12 @@ app.get('/api/resend-all', async (req, res) => {
             </div>
           `
         });
+
         successCount++;
+
+        // Delay 500ms between sends to avoid Resend 429 Rate Limit errors
+        await sleep(500);
+
       } catch (emailErr) {
         console.error(`Failed to send to ${user.email}:`, emailErr.message);
         failCount++;
